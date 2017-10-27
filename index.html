@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Star Wars</title>
+<!--<link rel="stylesheet" type="text/css" href="style.css">  -->
+<!--<script>type="text/javascript"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$ .get("https://swapi.co/api/people/", function(res){
+    console.log(res); 
+    for (i=0; i <= res.results.length; i++)
+    $('body').append(res.results[i].name)
+    });
+});
+</script>
+</head>
+<body>
+
+
+</body>
+</html>
